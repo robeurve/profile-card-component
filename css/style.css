@@ -1,0 +1,119 @@
+:root {
+  --dark-cyan: hsl(185, 75%, 39%);
+  --dark-blue: hsl(229, 23%, 23%);
+  --grayish-blue: hsl(227, 10%, 46%);
+  --dark-gray: hsl(0, 0%, 59%);
+  --font: "Kumbh Sans", sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font);
+  font-size: 1.8rem;
+  background-color: var(--dark-cyan);
+  background-image: url("../images/bg-pattern-top.svg"),
+    url("../images/bg-pattern-bottom.svg");
+  background-position: 120% 250%, -15% -150%;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 2.2rem;
+  color: var(--dark-blue);
+  margin-bottom: 1rem;
+}
+
+h1 span {
+  color: var(--grayish-blue);
+}
+
+img {
+  width: 100%;
+  height: 15rem;
+  object-fit: cover;
+}
+
+hr {
+  margin-top: 3rem;
+  border: 1px solid rgba(25, 162, 174, 0.3);
+}
+
+.container {
+  padding: 0 3rem;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 2rem;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+
+.avatar {
+  position: absolute;
+  max-width: 14rem;
+  height: auto;
+  top: 80px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 4px solid #fff;
+}
+
+.card-content {
+  margin-top: 9rem;
+}
+
+.card-footer {
+  padding: 3rem 3rem;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+}
+
+.grayish-blue {
+  color: var(--grayish-blue);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background-position: 230% 250%, -135% -150%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  body {
+    background-position: -70% 270%, 160% -250%;
+  }
+}
